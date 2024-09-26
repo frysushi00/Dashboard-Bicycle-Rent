@@ -12,6 +12,7 @@ def plot_weekday_rentals(df):
     plt.title('Total Penyewa Sepeda Berdasarkan Hari')
     plt.xlabel('Hari (0=Senin, 6=Minggu)')
     plt.ylabel('Total Penyewa Sepeda')
+    plt.yscale('log')
     plt.xticks(ticks=range(0, 7), labels=['Senin', 'Selasa', 'Rabu', 'Kamis', 'Jumat', 'Sabtu', 'Minggu'])
     st.pyplot(plt.gcf())
 
